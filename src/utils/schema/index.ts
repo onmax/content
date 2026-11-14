@@ -1,7 +1,7 @@
 import type { Draft07, EditorOptions, ContentConfig, ContentStandardSchemaV1, Draft07Definition, Draft07DefinitionProperty } from '../../types'
 import { resolveModule, useNuxt } from '@nuxt/kit'
-import { getComponentMeta } from 'nuxt-component-meta/parser'
 import { propsToJsonSchema } from 'nuxt-component-meta/utils'
+import { getComponentMeta } from './component-meta'
 
 export * from './definitions'
 

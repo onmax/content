@@ -17,7 +17,7 @@ vi.mock('@nuxt/kit', () => ({
   resolveModule: (p: string) => p.startsWith('~') ? `/resolved/${p.slice(1)}` : p,
 }))
 
-vi.mock('nuxt-component-meta/parser', () => ({
+vi.mock('../../src/utils/schema/component-meta', () => ({
   getComponentMeta: (path: string) => ({
     path,
     props: [{ name: 'title' }, { name: 'count' }],
